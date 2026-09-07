@@ -116,7 +116,7 @@ docker run --rm -p 8000:8000 -v "C:\path\to\images:/data:ro" covidcorrectorservi
 
 ```powershell
 $body = @{
-    path = "{path_to_project}\CovidCorrectorService\data\test\COVID19\COVID19(460).jpg"
+    path = "C:\path\to\project\CovidCorrectorService\data\test\COVID19\COVID19(460).jpg"
 } | ConvertTo-Json
 
 Invoke-RestMethod `
